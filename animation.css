@@ -1,0 +1,81 @@
+.animat{
+    width: 1200px;
+    height: 200px;
+    margin:auto;
+   perspective: 200px;
+   margin-top: 15px;
+   position: relative;
+   padding-top:10px;
+   padding-bottom:25px;
+    background-color: rgba(0,0,0,0.0);
+    border-bottom: 5px solid rgb(113,113,194)
+}
+@keyframes n1 {
+    0%{
+        transform: translateZ(25px);
+    }
+    33%{
+        transform: translatex(300px) translateZ(-25px);
+        background-color: rgba(255,0,0,0.5);
+    }
+    66%{
+        transform: translateX(-300px) translateZ(-25px);
+        background-color: rgba(255,0,0,0.5);
+    }
+}
+.animat .n1{
+    width: 400px;
+    height: 200px;
+    background-color: rgba(255,0,0);
+    position: absolute;
+    left:400px;
+    transform: translateZ(25px);
+    animation: n1 5s 1s ease infinite;
+    
+}
+@keyframes n2 {
+    0%{
+        transform: translateX(0px) translateZ(-25px);
+        background-color: rgba(0,255,0,0.5);
+    
+    }
+    33%{
+        transform: translateX(300px) translateZ(25px);
+        background-color: rgba(0,255,0);
+    }
+    66%{
+        transform: translateX(600px) translateZ(-25px);
+        background-color: rgba(0,255,0,0.5);
+    }
+}
+.animat .n2{
+    width: 400px;
+    height: 200px;
+    background-color: rgba(0,255,0,0.5);
+    position: absolute;
+    left:100px;
+    transform: translateZ(-25px);
+    animation: n2 5s 1s infinite;
+}
+@keyframes n3 {
+    0%{
+        transform: translateX(0px) translateZ(-25px);
+        background-color: rgba(0,0,255,0.5);
+    }
+    33%{
+        transform: translateX(-600px);
+    }
+    66%{
+        transform: translateX(-300px) translateZ(25px);
+        background-color: rbga(0,0,255);
+    }
+}
+.animat .n3{
+    width: 400px;
+    height: 200px;
+    background-color: rgba(0,0,255,0.5);
+    transform: translateZ(-25px);
+    position: absolute;
+    right:100px;
+    animation: n3 5s 1s infinite;
+}
